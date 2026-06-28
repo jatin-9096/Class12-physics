@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Shorveer Notes</title>
+    <meta name="description" content="Privacy Policy of Shorveer Notes. Learn how we collect, use, and protect your data while you study Class 12 Physics.">
+    <meta name="author" content="Jatin Sharma">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ================= COLOR THEME (Teal & Deep Navy) ================= */
+        :root {
+            --primary: #0f172a;       
+            --secondary: #0d9488;     
+            --secondary-light: #ccfbf1; 
+            --accent: #f59e0b;        
+            --bg-body: #f8fafc;       
+            --card-bg: #ffffff;
+            --border-soft: #e2e8f0;
+            --text-main: #1e293b;
+            --text-muted: #475569;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { background-color: var(--bg-body); color: var(--text-main); overflow-x: hidden; scroll-behavior: smooth; line-height: 1.7; }
+        a { text-decoration: none; color: inherit; }
+
+        /* ================= HEADER & NAV ================= */
+        header { 
+            background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); 
+            padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; 
+            position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid var(--secondary); box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+        }
+        .logo { font-size: 1.6rem; font-weight: 800; color: var(--primary); letter-spacing: -0.5px; z-index: 1001;}
+        .logo span { color: var(--secondary); }
+        
+        nav ul { list-style: none; display: flex; gap: 30px; }
+        nav ul li a { font-weight: 600; font-size: 0.95rem; color: var(--text-muted); transition: color 0.3s; }
+        nav ul li a:hover { color: var(--secondary); }
+        .menu-toggle { display: none; cursor: pointer; color: var(--primary); z-index: 1001; }
+        .menu-toggle svg { width: 30px; height: 30px; }
+
+        /* ================= PAGE HERO SECTION ================= */
+        .page-hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #1e1b4b 100%);
+            color: white; padding: 60px 5%; text-align: center; border-bottom: 4px solid var(--secondary);
+        }
+        .page-hero h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; margin-bottom: 10px; }
+        .page-hero p { font-size: 1.1rem; color: #cbd5e1; max-width: 600px; margin: 0 auto; }
+
+        /* ================= PRIVACY POLICY CONTENT STYLES ================= */
+        .policy-container { max-width: 900px; margin: 50px auto; padding: 0 5%; min-height: 50vh; }
+        .policy-card { background: var(--card-bg); border-radius: 12px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1px solid var(--border-soft); }
+        
+        .last-updated { font-size: 0.9rem; color: var(--secondary); font-weight: 700; margin-bottom: 30px; display: inline-block; background: var(--secondary-light); padding: 5px 15px; border-radius: 20px; }
+        
+        .policy-section { margin-bottom: 35px; }
+        .policy-section h2 { font-size: 1.4rem; color: var(--primary); font-weight: 800; margin-bottom: 15px; border-bottom: 2px solid var(--border-soft); padding-bottom: 10px; }
+        .policy-section p { color: var(--text-muted); font-size: 1.05rem; margin-bottom: 15px; }
+        .policy-section ul { margin-left: 20px; margin-bottom: 15px; color: var(--text-muted); font-size: 1.05rem; }
+        .policy-section ul li { margin-bottom: 8px; }
+
+        /* ================= FOOTER STYLES ================= */
+        footer { background: var(--primary); color: white; padding: 50px 0 20px; text-align: center; margin-top: 60px; }
+        .footer-links { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin-bottom: 30px; font-weight: 600; padding: 0 5%; }
+        .footer-links a { color: #cbd5e1; transition: color 0.3s; }
+        .footer-links a:hover { color: var(--secondary); }
+        
+        .trusted-section { background: rgba(0,0,0,0.3); padding: 15px 0; margin-bottom: 30px; overflow: hidden; white-space: nowrap; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .trusted-text { font-size: 0.75rem; color: #94a3b8; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 3px; font-weight: 700; }
+        .marquee { display: inline-block; animation: marqueeScroll 25s linear infinite; }
+        .marquee span { display: inline-block; padding: 0 40px; font-size: 1.1rem; font-weight: 700; color: rgba(255,255,255,0.7); }
+        @keyframes marqueeScroll { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+        
+        .shayari-container { min-height: 70px; margin: 20px 5% 30px; font-style: italic; color: var(--accent); font-size: 1.1rem; transition: opacity 0.5s ease-in-out; font-weight: 500; }
+        
+        .social-buttons { display: flex; gap: 15px; align-items: center; justify-content: center; margin-bottom: 25px; }
+        .social-btn { padding: 10px 20px; border-radius: 50px; font-weight: 700; display: flex; align-items: center; gap: 8px; transition: transform 0.3s; color: white; }
+        .social-btn:hover { transform: scale(1.05); }
+        
+        .copyright { font-size: 0.95rem; color: #94a3b8; margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; }
+        .copyright span { color: var(--secondary); font-weight: 700; }
+
+        /* Mobile Nav */
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            nav ul { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: var(--card-bg); padding: 0; max-height: 0; overflow: hidden; transition: max-height 0.3s; border-bottom: 1px solid var(--border-soft); }
+            nav ul.active { max-height: 300px; padding: 20px 0; }
+            nav ul li { text-align: center; margin: 15px 0; }
+            .policy-card { padding: 25px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Shorveer<span>Notes</span></div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#syllabus">Syllabus</a></li>
+                <li><a href="index.html#toc">All Chapters</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-hero">
+        <h1>Privacy Policy</h1>
+        <p>Transparency and security are our top priorities. Learn how we handle your data.</p>
+    </div>
+
+    <main class="policy-container">
+        <div class="policy-card">
+            
+            <span class="last-updated">Effective Date: June 2026</span>
+
+            <div class="policy-section">
+                <h2>1. Introduction</h2>
+                <p>Welcome to <strong>Shorveer Notes</strong>. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains what information we collect, how we use it, and what rights you have concerning it when you visit our website.</p>
+                <p>If you have any questions or concerns about our policy or our practices regarding your personal information, please contact us.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2>2. Information We Collect</h2>
+                <p>As an educational platform providing free Class 12 Physics notes, we keep data collection to an absolute minimum. We may collect:</p>
+                <ul>
+                    <li><strong>Usage Data:</strong> Information on how the website is accessed and used (e.g., your device's Internet Protocol address, browser type, pages visited, and time spent on pages). This helps us improve the user experience.</li>
+                    <li><strong>Contact Information:</strong> If you voluntarily reach out to us via email or social media, we may collect your name and email address strictly to respond to your queries.</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h2>3. How We Use Your Information</h2>
+                <p>We use the collected information for various professional purposes, including:</p>
+                <ul>
+                    <li>To provide and maintain the quality of our educational content.</li>
+                    <li>To monitor the usage of the website to fix bugs and improve performance.</li>
+                    <li>To respond to user feedback, queries, and support requests.</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h2>4. Third-Party Links & Services</h2>
+                <p>Our website may contain links to other websites, including our official YouTube channel and Instagram page. If you click on a third-party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2>5. Security of Data</h2>
+                <p>The security of your data is incredibly important to us. While we strive to use commercially acceptable means to protect your personal data, please remember that no method of transmission over the Internet or method of electronic storage is 100% secure.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2>6. Changes to This Privacy Policy</h2>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page with an updated "Effective Date" at the top. You are advised to review this Privacy Policy periodically for any changes.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2>7. Contact Us</h2>
+                <p>If you have any questions regarding this Privacy Policy, you can reach out to the founder:</p>
+                <p><strong>Founder:</strong> Jatin Sharma</p>
+                <p><strong>Platform:</strong> Shorveer Notes (Class 12 Physics CBSE)</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about-us.html">About Us</a>
+            <a href="privacy-policy.html" style="color: var(--secondary);">Privacy Policy</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="trusted-section">
+            <div class="trusted-text">Trusted By The Best</div>
+            <div class="marquee">
+                <span>12th Shorveer Maths</span>
+                <span>12th Shorveer English</span>
+                <span>12th Shorveer Chemistry</span>
+                <span>12th Shorveer Toppers</span>
+                <span>CBSE Experts</span>
+                <span>12th Shorveer Maths</span>
+                <span>12th Shorveer English</span>
+                <span>12th Shorveer Chemistry</span>
+                <span>12th Shorveer Toppers</span>
+                <span>CBSE Experts</span>
+            </div>
+        </div>
+        
+        <div class="shayari-container" id="shayariBox">
+            <span id="shayariText">"Loading motivation..."</span>
+        </div>
+        
+        <div class="social-buttons">
+            <a href="https://youtube.com/@jatin_sharma_s123?si=5aIi-KmGk22XgudT" target="_blank" class="social-btn" style="background: #ff0000;">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.377.505 9.377.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                YouTube
+            </a>
+            <a href="https://www.instagram.com/jatin_sharma_s123?igsh=N3F4d2puajhxcHh4" target="_blank" class="social-btn" style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.806.246 2.228.411.56.22.96.48 1.38.89.42.42.68.82.89 1.38.165.42.357 1.06.411 2.228.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.246 1.806-.411 2.228-.22.56-.48.96-.89 1.38-.42.42-.82.68-1.38.89-.42.165-1.06.357-2.228.411-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.806-.246-2.228-.411-.56-.22-.96-.48-1.38-.89-.42-.42-.68-.82-.89-1.38-.165-.42-.357-1.06-.411-2.228-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.246-1.806.411-2.228.22-.56.48-.96.89-1.38.42-.42.82-.68 1.38-.89.42-.165 1.06-.357 2.228-.411 1.266-.058 1.646-.07 4.85-.07zM12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.132 5.775.072 7.053.015 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.667 1.336 1.078 2.126 1.384.768.297 1.638.498 2.913.558C8.333 23.985 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.261 2.913-.558.788-.306 1.459-.717 2.126-1.384.667-.667 1.078-1.336 1.384-2.126.297-.768.498-1.638.558-2.913.057-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.261-2.148-.558-2.913-.306-.788-.717-1.459-1.384-2.126C21.319 1.347 20.65.936 19.86.63c-.765-.297-1.636-.498-2.913-.558C15.667.015 15.26 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                Instagram
+            </a>
+        </div>
+
+        <div class="copyright">
+            &copy; 2026 <span>Shorveer Notes</span>. All Rights Reserved. | 12th Physics Premium Material
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+
+        const shayaris = [
+            { hi: "सफलता एक दिन में नहीं मिलती, लेकिन ठान लो तो एक दिन जरूर मिलती है।", en: "Success isn't achieved in a day, but with true determination, it is definitely achieved one day." },
+            { hi: "इंतजार करने वालों को सिर्फ उतना मिलता है, जितना कोशिश करने वाले छोड़ देते हैं।", en: "Those who wait only get what those who try leave behind." },
+            { hi: "जीतने का असली मज़ा तो तब है, जब सब आपके हारने का इंतज़ार कर रहे हों।", en: "The real joy of winning comes when everyone else is waiting for you to lose." },
+            { hi: "पसीने की स्याही से जो लिखते हैं अपने इरादों को, उनके मुकद्दर के पन्ने कभी कोरे नहीं होते।", en: "Those who write their intentions with the ink of hard work, the pages of their destiny are never left blank." }
+        ];
+        
+        let shayariIndex = 0;
+        const shayariBox = document.getElementById('shayariBox');
+        const shayariText = document.getElementById('shayariText');
+
+        function changeShayari() {
+            shayariBox.style.opacity = 0;
+            setTimeout(() => {
+                const current = shayaris[shayariIndex];
+                shayariText.innerHTML = `${current.hi} <br> <span style="font-size: 0.9rem; color: #94a3b8; font-weight: 500; margin-top: 5px; display: inline-block;">${current.en}</span>`;
+                shayariBox.style.opacity = 1;
+                shayariIndex = (shayariIndex + 1) % shayaris.length;
+            }, 500); 
+        }
+        
+        changeShayari();
+        setInterval(changeShayari, 6000);
+    </script>
+</body>
+</html>
+
