@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ================= ADVANCED SEO META TAGS ================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorveer Notes | Ultimate Class 12 Physics CBSE Study Material 2026</title>
+    <meta name="description" content="Shorveer Notes provides the best Class 12 Physics CBSE syllabus, chapter-wise detailed long notes, quick revision short notes, chapter-wise PYQs, and latest sample papers. Score 70/70 in your board exams.">
+    <meta name="keywords" content="Class 12 Physics Notes, CBSE Physics syllabus 2026, Shorveer Notes, Jatin Sharma physics, PYQ Class 12 Physics, Physics revision notes, CBSE sample papers physics, Class 12 Physics chapter wise PYQ, Physics short notes class 12">
+    <meta name="author" content="Jatin Sharma">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Shorveer Notes | Master Class 12 Physics">
+    <meta property="og:description" content="Free premium notes, PYQs, and sample papers for Class 12 Physics CBSE students. Access chapter-wise long and short notes easily.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Shorveer Notes">
+    
+    <!-- Premium Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ================= CSS VARIABLES ================= */
+        :root {
+            --primary: #0f172a; 
+            --secondary: #4f46e5; 
+            --secondary-hover: #4338ca;
+            --accent: #f59e0b; 
+            --bg-body: #f8fafc; 
+            --glass-bg: rgba(255, 255, 255, 0.9);
+            --border-soft: #e2e8f0;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { background-color: var(--bg-body); color: var(--text-main); overflow-x: hidden; scroll-behavior: smooth; }
+        a { text-decoration: none; color: inherit; }
+
+        /* ================= HEADER & RESPONSIVE NAV ================= */
+        header { 
+            background: var(--glass-bg); 
+            backdrop-filter: blur(12px);
+            padding: 15px 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            border-bottom: 1px solid var(--border-soft);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03); 
+        }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); letter-spacing: -0.5px; z-index: 1001; }
+        .logo span { color: var(--secondary); }
+        
+        nav ul { list-style: none; display: flex; gap: 30px; }
+        nav ul li a { font-weight: 600; font-size: 0.95rem; color: var(--text-muted); transition: color 0.3s; }
+        nav ul li a:hover { color: var(--secondary); }
+
+        /* Hamburger Menu Icon (Hidden on Desktop) */
+        .menu-toggle { display: none; cursor: pointer; color: var(--primary); z-index: 1001; }
+        .menu-toggle svg { width: 30px; height: 30px; }
+
+        /* ================= HERO SECTION ================= */
+        .hero { 
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); 
+            color: white; 
+            padding: 70px 5%; 
+            text-align: center; 
+            border-bottom: 4px solid var(--secondary);
+            position: relative;
+        }
+        .hero-content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
+        .hero h1 { font-size: clamp(2rem, 5vw, 4rem); font-weight: 800; line-height: 1.15; margin-bottom: 20px; letter-spacing: -1px; }
+        .hero p { font-size: clamp(1rem, 3vw, 1.15rem); color: #cbd5e1; margin-bottom: 30px; line-height: 1.6; }
+
+        /* ================= SECTIONS & TABLES ================= */
+        .section-container { max-width: 1100px; margin: 60px auto; padding: 0 5%; }
+        .section-title { text-align: center; font-size: clamp(1.8rem, 4vw, 2.2rem); color: var(--primary); margin-bottom: 40px; font-weight: 800; }
+        .section-title span { color: var(--secondary); }
+
+        .table-wrapper { 
+            background: white;
+            border-radius: 16px; 
+            overflow-x: auto; 
+            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.05); 
+            border: 1px solid var(--border-soft);
+            margin-bottom: 30px;
+        }
+        
+        /* Table Styles (Scrollable on small screens) */
+        table { width: 100%; border-collapse: collapse; min-width: 700px; text-align: left; }
+        th { background: var(--bg-body); color: var(--primary); padding: 18px 15px; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; border-bottom: 2px solid var(--border-soft); }
+        td { padding: 15px; border-bottom: 1px solid var(--border-soft); vertical-align: middle; font-weight: 500; color: var(--text-main); font-size: 0.95rem; }
+        tr:last-child td { border-bottom: none; }
+        tr:hover td { background-color: #f8fafc; }
+        
+        .btn-sm { display: inline-block; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-align: center; transition: all 0.3s ease; white-space: nowrap; }
+        .btn-long { background: #e0e7ff; color: #3730a3; }
+        .btn-long:hover { background: #3730a3; color: white; transform: translateY(-2px); }
+        .btn-short { background: #dcfce7; color: #166534; }
+        .btn-short:hover { background: #166534; color: white; transform: translateY(-2px); }
+        .btn-pyq { background: #ffedd5; color: #9a3412; }
+        .btn-pyq:hover { background: #9a3412; color: white; transform: translateY(-2px); }
+
+        .chapter-name { font-weight: 700; color: var(--primary); font-size: 1.05rem; }
+        .chapter-num { font-size: 0.85rem; color: var(--text-muted); font-weight: 600; display: block; margin-bottom: 3px; }
+
+        /* ================= EXAM CORNER ================= */
+        .exam-corner { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 20px; }
+        .exam-card { padding: 40px 30px; border-radius: 20px; text-align: center; color: white; box-shadow: 0 15px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+        .exam-card:hover { transform: translateY(-5px); }
+        .card-1 { background: linear-gradient(135deg, #f59e0b, #ea580c); }
+        .card-2 { background: linear-gradient(135deg, #10b981, #059669); }
+        .exam-card h3 { font-size: 1.8rem; font-weight: 800; margin-bottom: 10px; }
+        .exam-card p { font-size: 1rem; opacity: 0.9; margin-bottom: 25px; }
+        .exam-btn { background: rgba(255,255,255,0.2); backdrop-filter: blur(5px); color: white; padding: 12px 30px; border-radius: 30px; font-weight: 700; border: 1px solid rgba(255,255,255,0.4); display: inline-block; transition: all 0.3s; }
+        .exam-btn:hover { background: white; color: var(--primary); }
+
+        /* ================= FOOTER ================= */
+        footer { background: var(--primary); color: white; padding: 40px 0 10px; text-align: center; margin-top: 60px; }
+        .footer-links { display: flex; justify-content: center; gap: 25px; margin-bottom: 25px; flex-wrap: wrap; font-weight: 600; padding: 0 5%;}
+        .footer-links a:hover { color: var(--accent); }
+        
+        .trusted-section { background: rgba(0,0,0,0.3); padding: 15px 0; margin-bottom: 25px; overflow: hidden; white-space: nowrap; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .trusted-text { font-size: 0.75rem; color: #94a3b8; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 3px; font-weight: 700; }
+        .marquee { display: inline-block; animation: marqueeScroll 20s linear infinite; }
+        .marquee span { display: inline-block; padding: 0 40px; font-size: 1.1rem; font-weight: 700; color: rgba(255,255,255,0.7); }
+        @keyframes marqueeScroll { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+        
+        .shayari-container { min-height: 70px; margin: 20px 5%; font-style: italic; color: var(--accent); font-size: 1.1rem; transition: opacity 0.5s ease-in-out; font-weight: 500; }
+        .signature { font-size: 1.2rem; font-weight: 700; margin: 15px 0; }
+        .copyright { font-size: 0.9rem; color: #64748b; margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; }
+
+        /* ================= MOBILE RESPONSIVE MEDIA QUERIES ================= */
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--glass-bg);
+                backdrop-filter: blur(15px);
+                padding: 0;
+                max-height: 0; /* Hidden by default */
+                overflow: hidden;
+                transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+                border-bottom: 1px solid var(--border-soft);
+                box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+            }
+            
+            nav ul.active { 
+                max-height: 300px; /* Expands when active */
+                padding: 20px 0; 
+            }
+            
+            nav ul li { text-align: center; margin: 15px 0; }
+            
+            .hero { padding: 50px 5%; }
+            .section-container { margin: 40px auto; }
+            
+            /* Give tables some breathing room on mobile scrolling */
+            .table-wrapper { border-radius: 10px; margin: 0 -3%; width: 106%; border-left: none; border-right: none; }
+            td { padding: 12px 10px; font-size: 0.9rem; }
+            .btn-sm { padding: 6px 12px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Shorveer<span>Notes</span></div>
+        
+        <!-- Hamburger Menu SVG -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </div>
+
+        <nav>
+            <ul id="navMenu">
+                <li><a href="#" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#syllabus" onclick="toggleMenu()">Syllabus</a></li>
+                <li><a href="#toc" onclick="toggleMenu()">All Chapters</a></li>
+                <li><a href="#exam-corner" onclick="toggleMenu()">Exam Corner</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Master Class 12 Physics</h1>
+            <p>Premium notes, chapter-wise PYQs, and the latest sample papers based on the official CBSE 2026 Syllabus. Aesthetic, clean, and designed for toppers.</p>
+        </div>
+    </div>
+
+    <!-- Syllabus Table Section -->
+    <div class="section-container" id="syllabus">
+        <h2 class="section-title">CBSE <span>Weightage</span></h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Units</th>
+                        <th>Chapters Included</th>
+                        <th style="text-align: center;">Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Unit I & II</strong></td>
+                        <td>Ch 1: Electric Charges | Ch 2: Potential & Cap. | Ch 3: Current Electricity</td>
+                        <td style="text-align: center; font-weight: 800; color: var(--secondary); font-size: 1.2rem;">16</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Unit III & IV</strong></td>
+                        <td>Ch 4: Moving Charges | Ch 5: Magnetism | Ch 6: EMI | Ch 7: AC</td>
+                        <td style="text-align: center; font-weight: 800; color: var(--secondary); font-size: 1.2rem;">17</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Unit V & VI</strong></td>
+                        <td>Ch 8: EM Waves | Ch 9: Ray Optics | Ch 10: Wave Optics</td>
+                        <td style="text-align: center; font-weight: 800; color: var(--secondary); font-size: 1.2rem;">18</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Unit VII & VIII</strong></td>
+                        <td>Ch 11: Dual Nature | Ch 12: Atoms | Ch 13: Nuclei</td>
+                        <td style="text-align: center; font-weight: 800; color: var(--secondary); font-size: 1.2rem;">12</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Unit IX</strong></td>
+                        <td>Ch 14: Semiconductor Electronics</td>
+                        <td style="text-align: center; font-weight: 800; color: var(--secondary); font-size: 1.2rem;">07</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Complete Table of Contents (TOC) -->
+    <div class="section-container" id="toc">
+        <h2 class="section-title">Chapter-wise <span>Study Material</span></h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Chapter Details</th>
+                        <th style="text-align: center;">Detailed Study</th>
+                        <th style="text-align: center;">Quick Revision</th>
+                        <th style="text-align: center;">Practice</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Chapter 1 -->
+                    <tr>
+                        <td>
+                            <span class="chapter-num">Chapter 1</span>
+                            <span class="chapter-name">Electric Charges and Fields</span>
+                        </td>
+                        <td style="text-align: center;"><a href="ch1-long.html" class="btn-sm btn-long">Long Notes</a></td>
+                        <td style="text-align: center;"><a href="ch1-short.html" class="btn-sm btn-short">Short Notes</a></td>
+                        <td style="text-align: center;"><a href="ch1-pyq.html" class="btn-sm btn-pyq">PYQs & IMP</a></td>
+                    </tr>
+                    <!-- Chapter 2 -->
+                    <tr>
+                        <td>
+                            <span class="chapter-num">Chapter 2</span>
+                            <span class="chapter-name">Electrostatic Potential and Capacitance</span>
+                        </td>
+                        <td style="text-align: center;"><a href="#" class="btn-sm btn-long">Long Notes</a></td>
+                        <td style="text-align: center;"><a href="#" class="btn-sm btn-short">Short Notes</a></td>
+                        <td style="text-align: center;"><a href="#" class="btn-sm btn-pyq">PYQs & IMP</a></td>
+                    </tr>
+                    <!-- Chapter 3 -->
+                    <tr>
+                        <td>
+                            <span class="chapter-num">Chapter 3</span>
+                            <span class="chapter-name">Current Electricity</span>
+                        </td>
+                        <td style="text-align: center;"><a href="#" class="btn-sm btn-long">Long Notes</a></td>
+                        <td style="text-align: center;"><a href="#" class="btn-sm btn-short">Short Notes</a></td>
+                        <td style="text-align: center;"><a href="#" class="btn-sm btn-pyq">PYQs & IMP</a></td>
+                    </tr>
+                    <!-- (Add remaining chapters exactly like above if needed) -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Examination Corner (Sample Papers & Previous Year Papers) -->
+    <div class="section-container" id="exam-corner">
+        <h2 class="section-title">Examination <span>Corner</span></h2>
+        <div class="exam-corner">
+            <div class="exam-card card-1">
+                <h3>Sample Papers</h3>
+                <p>Latest CBSE Pattern Solved & Unsolved Mock Papers for final practice.</p>
+                <a href="sample-papers.html" class="exam-btn">Access Papers ➔</a>
+            </div>
+            <div class="exam-card card-2">
+                <h3>Previous Year Papers</h3>
+                <p>Last 10 years CBSE Board Question Papers to master the exam trends.</p>
+                <a href="pyq-papers.html" class="exam-btn">View Past Papers ➔</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <a href="about-us.html">About Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="#exam-corner">Examination Corner</a>
+        </div>
+        
+        <div class="trusted-section">
+            <div class="trusted-text">Trusted By</div>
+            <div class="marquee">
+                <span>12th Shoorveer Math</span>
+                <span>CBSE Experts</span>
+                <span>12th Shorveer English</span>
+                <span>12th Shorveer chemistry</span>
+                <span>12th Shorveer Physics</span>
+                <span>12 Shoorveer Math</span>
+            </div>
+        </div>
+        
+        <div class="shayari-container" id="shayariBox">
+            <span id="shayariText">"Loading motivation..."</span>
+        </div>
+        
+        <div class="signature">~ Jatin Sharma (Founder of Shorveer Notes)</div>
+        <div class="copyright">&copy; 2026 Shorveer Notes. All Rights Reserved.</div>
+    </footer>
+
+    <!-- Javascript -->
+    <script>
+        // Hamburger Menu Logic
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Rotating Shayari Logic
+        const shayaris = [
+            { hi: "मंजिलें क्या हैं, रास्ता क्या है? हौसला हो तो फासला क्या है।", en: "What is the destination, what is the path? If there is courage, distance matters not." },
+            { hi: "कड़ी मेहनत आपको वहां पहुंचा देती है, जहां अच्छी किस्मत शायद आपको न पहुंचा पाए।", en: "Hard work puts you where good luck might not." },
+            { hi: "बिना संघर्ष के कोई महान नहीं होता, पत्थर पर जब तक चोट ना पड़े, पत्थर भी भगवान नहीं होता।", en: "No one becomes great without struggle; until a stone takes a blow, it cannot become an idol." }
+        ];
+        let shayariIndex = 0;
+        const shayariBox = document.getElementById('shayariBox');
+        const shayariText = document.getElementById('shayariText');
+
+        function changeShayari() {
+            shayariBox.style.opacity = 0;
+            setTimeout(() => {
+                const current = shayaris[shayariIndex];
+                shayariText.innerHTML = `${current.hi} <br> <span style="font-size: 0.9rem; color: #94a3b8; font-weight: 500; margin-top: 5px; display: inline-block;">${current.en}</span>`;
+                shayariBox.style.opacity = 1;
+                shayariIndex = (shayariIndex + 1) % shayaris.length;
+            }, 500); 
+        }
+        
+        changeShayari();
+        setInterval(changeShayari, 6000);
+    </script>
+</body>
+</html>
